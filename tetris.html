@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #score,
+        #level {
+            display: inline-block;
+        }
+
+        div {
+            font-size: 25px;
+            font-weight: bold;
+            font-family: monospace;
+            text-align: center;
+        }
+
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: monospace;
+            font-size: 40px;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: monospace;
+            font-size: 30px;
+        }
+
+        #controls {
+            text-align: center;
+            font-family: monospace;
+            font-size: 20px;
+        }
+    </style>
+    <title>Tetris Game</title>
+
+</head>
+
+<body>
+    <h1>TETRIS</h1>
+    <canvas id="tetris" width="200" height="400"></canvas>
+    <div>
+        Level <div id="level">1</div> | Score : <div id="score">0</div>
+    </div>
+    <h2>Controls</h2>
+    <div id="controls">Up Arrow: Rotate Piece Clockwise <br>
+        Down Arrow: Move Piece Down <br>
+        Left/Right Arrows: Move Piece Left/Right</div>
+
+    <script src="tetris.js"></script>
+</body>
+
+
+</html>
